@@ -1,0 +1,242 @@
+body {
+  background-color: #171717;
+  font-family: Roboto-Regular, Arial, sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+h3 {
+  margin-top: 40px;
+}
+.content {
+  width: 100%;
+  color: white;
+  overflow-x: hidden;
+  margin-top: 70px;
+  padding: 0;
+}
+
+img.movie-poster {
+  border: 5px solid #171717;
+  margin-right: 5px;
+  cursor: pointer;
+}
+img.movie-poster:hover {
+  border: 5px solid yellow;
+}
+
+.slider {
+  width: 98%;
+  margin-left: 1%;
+  height: 400px;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-scroll-snap-points-x: repeat(300px);
+  -ms-scroll-snap-points-x: repeat(300px);
+  scroll-snap-points-x: repeat(300px);
+  -webkit-scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory;
+}
+
+.slider.no-margin {
+  margin-left: 0;
+  height: 200px;
+  p {
+    line-height: 1.2em;
+  }
+}
+
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.small {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+$gutter: 40px;
+
+.block {
+  display: block;
+  padding: 50px 0;
+  text-align: center;
+  margin-bottom: $gutter;
+}
+
+//the grid:
+
+.grid {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: $gutter;
+}
+
+.gutter {
+  margin-left: ($gutter / 2);
+  margin-right: ($gutter / 2);
+}
+
+.col-33 {
+  width: 33.3%;
+  float: left;
+}
+
+.col-50 {
+  width: 50%;
+  float: left;
+}
+.col-30 {
+  width: 30%;
+  float: left;
+}
+.col-70 {
+  width: 66.3%;
+  float: left;
+}
+.col-100 {
+  width: 100%;
+  float: left;
+}
+.clear {
+  clear: both;
+  display: block;
+}
+
+.audio {
+  line-height: 0px;
+}
+
+@media all and (max-width: 730px) {
+  .audio {
+    line-height: 30px;
+  }
+  .col-33,
+  .col-50 {
+    width: 90%;
+  }
+}
+@media all and (max-width: 1140px) {
+  .col-70 {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .col-50,
+  .col-33,
+  .col-70 {
+    width: 100%;
+    float: none;
+  }
+}
+
+.award__laurea--left {
+  width: 25px;
+  height: 60px;
+  margin-right: 5px;
+  background-image: url('https://prod0-kraken-cloudfront.rakuten.tv/images/backgrounds/award-laurea_left-95048c9a7d.svg');
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.award__laurea--right {
+  width: 25px;
+  height: 60px;
+  margin-left: 5px;
+  background-image: url('https://prod3-kraken-cloudfront.rakuten.tv/images/backgrounds/award-laurea_right-2fc15e2daa.svg');
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tech-details {
+  font-weight: bold;
+}
+
+.regular {
+  background-color: #ffe300;
+}
+
+.inverted {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffe300;
+}
+
+.big {
+  font-size: 3.5em;
+  margin-top: 20px;
+}
+
+.genre-container {
+  text-align: center;
+  width: 100px;
+}
+
+.genre {
+  background-color: grey;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.golden {
+  color: #c2a104;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  text-align: center;
+}
+
+.line-height-5 {
+  line-height: 5px;
+}
+
+.detail-container {
+  background-color: white;
+  padding: 30px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.flex-center {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+score {
+  padding-right: 10px;
+  font-weight: 400;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.grey {
+  color: grey;
+}
+
+.margin-right-sm {
+  margin-right: 15px;
+}
