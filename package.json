@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A small frontend clone of rakuten tv's web app",
   "main": "index.js",
+  "proxy": "http://localhost:5000",
   "babel": {
     "presets": [
       [
@@ -19,7 +20,8 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "NODE_ENV=production webpack --config ./webpack.config.js",
-    "create": "webpack"
+    "create": "webpack",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
