@@ -53,6 +53,9 @@ This application consumes RakutenTv's public API, with the following verbs
 ### Libraries
 - react-lazyload
 - styled-components
+- eslint
+- prettier
+- fontAwesome icons
 
 ### Next steps
 - Use recompose (remove states)
