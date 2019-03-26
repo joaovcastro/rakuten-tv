@@ -19,10 +19,10 @@ import {
   faThumbtack,
 } from '@fortawesome/free-solid-svg-icons';
 import LazyLoad from 'react-lazyload';
-import MovieCover from '../components/MovieCover';
-import Genre from '../components/Genre';
-import Award from '../components/Award';
-import fetchMovie from '../actions/fetchMovie';
+import MovieCover from '../../components/MovieCover';
+import Genre from '../../components/Genre';
+import Award from '../../components/Award';
+import fetchMovie from '../../actions/fetchMovie';
 
 const DirectionCasting = styled.div`
   display: flex;

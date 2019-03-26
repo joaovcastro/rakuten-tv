@@ -25,7 +25,6 @@ export default function fetchLists(movieId) {
       },
     )
       .then(async response => {
-        console.log(response)
         const body = await response.json();
         return Object.assign({}, { status: response.status, body });
       })

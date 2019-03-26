@@ -1,20 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import LazyLoad from 'react-lazyload';
-import fetchLists from '../actions/fetchLists';
-import MovieListItem from '../components/MovieList';
-import Carousel from '../components/Carousel/Carousel';
+import fetchLists from '../../actions/fetchLists';
+import MovieListItem from '../../components/MovieList';
+import Carousel from '../../components/Carousel/Carousel';
 
 class MovieList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      listName: props.listName,
-    };
-  }
-
   componentDidMount() {
-    this.props.fetchLists();
+    this.props.fetchLists(this.props.list);
   }
 
   render() {
@@ -52,8 +45,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    fetchLists: function() {
-      dispatch(fetchLists());
+    fetchLists: function(listId) {
+      dispatch(fetchLists(listId));
     },
   };
 }

@@ -10,7 +10,7 @@ import Movie from './containers/Movie';
 import Trailer from './containers/Trailer';
 import { LayoutRoute } from './components/Layout/Layout';
 import './App.scss';
-import './circle.css';
+import './styles/circle.css';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 

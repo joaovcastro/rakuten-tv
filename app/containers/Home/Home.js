@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import MovieList from '../MovieList';
+import MovieList from '../MovieList/MovieList';
 import WelcomeBanner from '../../components/WelcomeBanner';
 
 const movieLists = [

@@ -4,8 +4,7 @@ export default function fetchLists(listName) {
       type: 'FETCH_LIST_REQUEST',
     });
     return fetch(
-      // `https://gizmo.rakuten.tv/v3/lists/${listName}?classification_id=5&device_identifier=web&locale=es&market_code=es`,
-      'http://localhost:3000/taquilla',
+      `https://gizmo.rakuten.tv/v3/lists/${listName}?classification_id=5&device_identifier=web&locale=es&market_code=es`,
     )
       .then(async response => {
         const body = await response.json();

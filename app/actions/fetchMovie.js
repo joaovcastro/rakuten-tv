@@ -4,8 +4,7 @@ export default function fetchMovie(movieId) {
       type: 'FETCH_MOVIE_REQUEST',
     });
     return fetch(
-      // `https://gizmo.rakuten.tv/v3/movies/${movieId}?classification_id=5&device_identifier=web& locale=es&market_code=es`
-      'http://localhost:3000/movie',
+      `https://gizmo.rakuten.tv/v3/movies/${movieId}?classification_id=5&device_identifier=web&locale=es&market_code=es`,
     )
       .then(async response => {
         const body = await response.json();
