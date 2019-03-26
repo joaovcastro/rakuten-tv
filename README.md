@@ -4,7 +4,6 @@ A small frontend clone of rakuten tv's web app.
 ## Interfaces
 
 ### Home
-- Home with some lists of movies
 ![Home](https://image.prntscr.com/image/IIx72eXOSrKwxgwGcghbEA.png)
 -  Each list should contain a title and should be scrollable horizontally by clicking on some buttons.
 
