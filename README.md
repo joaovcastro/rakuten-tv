@@ -30,6 +30,9 @@ A small frontend clone of rakuten tv's web app.
 4. run locally
 `npm start`
 
+#### Test
+run `jest` to run all tests
+
 ### Technologies and Libraries
 
 #### API
@@ -52,6 +55,7 @@ This application consumes RakutenTv's public API, with the following verbs
 
 ### Libraries
 - react-lazyload
+- jest
 - styled-components
 - eslint
 - prettier
