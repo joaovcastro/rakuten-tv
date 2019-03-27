@@ -10,7 +10,7 @@ const Icon = styled(FontAwesomeIcon)`
 `;
 
 const MovieListItem = elem => {
-  const { item, onClick } = elem;
+  const { item, onClick } = elem.item ? elem : elem.elem;
   return (
     <Link to={`/movie/${item.id}`}>
       <div className="grid" onClick={onClick}>

@@ -11,7 +11,9 @@ class MovieList extends Component {
   }
 
   render() {
-    return (
+    return !this.props.list.contents ? (
+      <div />
+    ) : (
       <LazyLoad height={400}>
         <h2
           style={{

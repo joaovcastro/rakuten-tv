@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Award /> correctly renders 1`] = `
+<div
+  className="flex center line-height-5"
+>
+  <div
+    className="award__laurea--left"
+  />
+  <div
+    className="center"
+  >
+    <p
+      className="bold"
+    />
+    <p
+      className="bold golden"
+    />
+    <p />
+  </div>
+  <div
+    className="award__laurea--right"
+  />
+</div>
+`;

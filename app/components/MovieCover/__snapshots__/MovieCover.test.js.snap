@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MovieCover /> correctly renders 1`] = `
+<StyledComponent
+  backgroundImage="url"
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+  padding-top: 300px;
+  padding-bottom: 100px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: -105px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  line-height: 10px;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 0, 0, 0.15) 60%,
+    rgba(0, 0, 0, 0.5) 70%,
+    rgba(0, 0, 0, 0.7) 80%,
+    #171717 100%
+  );
+
+  &:before {
+    content: '';
+    position: absolute;
+    margin-top: 60px;
+    z-index: -1;
+    height: 680px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(",
+          [Function],
+          ");
+    background-position: center top;
+    background-attachment: fixed;
+  }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "backgroundImage": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;

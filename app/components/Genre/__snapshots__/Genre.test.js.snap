@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Genre /> correctly renders 1`] = `
+<div
+  className="genre-container"
+>
+  <div
+    className="genre"
+  >
+    <img
+      src="url"
+    />
+  </div>
+  <p>
+     
+    genre
+     
+  </p>
+</div>
+`;

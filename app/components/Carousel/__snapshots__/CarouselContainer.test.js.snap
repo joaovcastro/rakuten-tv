@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarouselContainer /> correctly renders 1`] = `
+<StyledComponent
+  direction=""
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+  display: flex;
+  margin: 0;
+  transition: ",
+          [Function],
+          ";
+  transform: ",
+          [Function],
+          ";
+",
+        ],
+      },
+      "defaultProps": Object {
+        "direction": "",
+        "sliding": false,
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "direction": [Function],
+        "sliding": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  sliding={false}
+/>
+`;
